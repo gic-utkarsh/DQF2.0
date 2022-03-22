@@ -1,0 +1,23 @@
+<kendo-appbar [position]="'top'">
+    <kendo-appbar-section>
+      <button class="k-button k-button-clear" style="padding: 5px;">
+          <kendo-icon [name]="'menu'" (click)="showHideMenu()" ></kendo-icon>
+      </button>
+  </kendo-appbar-section>
+    <kendo-appbar-spacer [width]="'8px'"></kendo-appbar-spacer>
+    <kendo-appbar-section>
+    <img src="./assets/images/fadv-logo.svg" class="logo-img">
+    </kendo-appbar-section>
+  
+    <kendo-appbar-spacer></kendo-appbar-spacer>
+    <kendo-appbar-section><img src="./assets/images/ngindia.png" class="logo-img"></kendo-appbar-section>
+    <kendo-appbar-spacer></kendo-appbar-spacer>
+    <!-- <kendo-appbar-section>
+      <div class="bm-user" *ngIf="currentUserName">
+        <div class="icon"><span class="k-icon k-i-user"></span></div>
+        <div class="username" (click)="goToProfile()"><strong style="text-transform: uppercase;">{{ currentUserName }}</strong></div>
+        <div class="logout"><a (click)="onlogout()" style="cursor: pointer;"><span class="k-icon k-i-logout"></span> Logout</a></div>
+      </div>
+    </kendo-appbar-section> -->
+    </kendo-appbar>
+  

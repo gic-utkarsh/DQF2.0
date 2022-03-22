@@ -1,0 +1,44 @@
+<app-header></app-header>
+
+<kendo-splitter style="height: calc(100vh - 66px)">
+
+
+      <kendo-splitter-pane [collapsible]="true" [(collapsed)]="collapsed" [resizable]="false" size="18%" class="menu_fadv">
+        <div >
+        <kendo-panelbar>
+
+          <kendo-panelbar-item *ngFor="let menu of menuData; let i = index" (click)="openDialog(menu)"
+            [expanded]="menu.selected == true">
+            <ng-template kendoPanelBarItemTitle>
+              <span class="{{menu.menuIcon + ' k-icon'}}" style="margin-left: 10px; padding-right: 10px;">
+              </span>
+             <span style="font-weight: 500; text-transform: uppercase;">{{menu.menuTitle}}</span>
+            </ng-template>
+            <kendo-panelbar-item *ngFor="let item of menu.menuItems"
+              (click)="openDialog(item)" [selected]="true">
+              <ng-template kendoPanelBarItemTitle>
+                <div style="padding: 5px 0px">
+                  <span class="{{item.icon + ' k-icon'}}" style="padding-right: 10px;">
+                  </span>
+                 <span>{{item.text}}</span>
+                </div>
+              </ng-template>
+
+            </kendo-panelbar-item>
+          </kendo-panelbar-item>
+
+        </kendo-panelbar></div>
+      </kendo-splitter-pane>
+
+      <kendo-splitter-pane>
+        <kendo-card style="width: 100%; height: 100%;">
+
+        <kendo-card-body style="overflow-y: auto;"><router-outlet></router-outlet></kendo-card-body>
+        <kendo-card-footer>
+          <app-footer></app-footer>
+        </kendo-card-footer>
+        </kendo-card>
+      </kendo-splitter-pane>
+
+
+</kendo-splitter>

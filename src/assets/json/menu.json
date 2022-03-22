@@ -1,0 +1,124 @@
+{
+  "allMenuItems": [
+  
+  {
+  "children": false,
+  "selected": false,
+  "path": "business_rules",
+  "menuTitle": "Business Rules",
+  "menuIcon": "k-i-folder",
+  "menuId": 18,
+  "menuItems": []
+  },
+  
+  {
+  "children": true,
+  "selected": false,
+  "path": "",
+  "menuTitle": "Customers",
+  "menuIcon": "k-i-folder",
+  "menuId": 8,
+  "menuItems": [
+  {
+  "text": "Create Customer",
+  "icon": "k-i-aggregate-fields",
+  "level": 1,
+  "path": "createcustomer"
+  },
+  {
+  "text": "Customer Details",
+  "icon": "k-i-aggregate-fields",
+  "level": 1,
+  "path": "customerdetails"
+  },
+  {
+  "text": "Client User Mapping",
+  "icon": "k-i-aggregate-fields",
+  "level": 1,
+  "path": "clientusermapping"
+  }
+  ]
+  },
+  {
+  "children": true,
+  "selected": false,
+  "path": "",
+  "menuTitle": "Administration",
+  "menuIcon": "k-i-page-properties",
+  "menuId": 20,
+  "menuItems": [
+  {
+  "text": "MRL Config",
+  "icon": "k-i-txt",
+  "level": 1,
+  "path": "mrl-config"
+  },
+  {
+  "text": "Scoping Configuration",
+  "icon": "k-i-txt",
+  "level": 1,
+  "path": "mrl-config/scopingConfig"
+  },
+  {
+  "text": "Doc Validation",
+  "icon": "k-i-txt",
+  "level": 1,
+  "path": "mrl-config/docValidation"
+  },
+  {
+  "text": "Case Level Mi",
+  "icon": "k-i-txt",
+  "level": 1,
+  "path": "mrl-config/case-level-mi"
+  }
+  ]
+  },
+  
+  {
+  "children": false,
+  "selected": false,
+  "path": "business_process",
+  "menuTitle": "Business Process",
+  "menuIcon": "k-i-folder",
+  "menuId": 24,
+  "menuItems": []
+  },
+  
+  
+  
+  {
+  "children": false,
+  "selected": false,
+  "path": "usermanagement",
+  "menuTitle": "User Management",
+  "menuIcon": "k-i-folder",
+  "menuId": 26,
+  "menuItems": []
+  },
+  
+  
+  
+  
+  {
+  "children": false,
+  "selected": false,
+  "path": "documents",
+  "menuTitle": "Documents",
+  "menuIcon": "k-i-folder",
+  "menuId": 32,
+  "menuItems": []
+  },
+  
+  
+  
+  {
+  "children": false,
+  "selected": false,
+  "path": "reports",
+  "menuTitle": "Reports",
+  "menuIcon": "k-i-aggregate-fields",
+  "menuId": 34,
+  "menuItems": []
+  }
+  ]
+  }
